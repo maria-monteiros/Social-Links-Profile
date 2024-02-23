@@ -1,0 +1,99 @@
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-dark-grey: hsl(0, 0%, 12%);
+    --color-off-black: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-off-black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.card {
+    width: 19rem;
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.profile {
+    padding-bottom: 2rem;
+}
+
+.profile img {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    font-size: 1.6rem;
+    padding: 2rem 0 1rem;
+}
+
+.profile-location {
+    color: var(--color-green);
+    padding-bottom: 2rem;
+    font-size: .9rem;
+}
+
+.profile-work {
+    font-size: .9rem;
+}
+
+.btn ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn li{
+    background-color: var(--color-grey);
+    padding: 1rem 0;
+    color: var(--color-white);
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.btn li:hover{
+    background-color: var(--color-green);
+    color: var(--color-dark-grey);
+    cursor:pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-grey);
+    font-size: .8rem;
+}  
+    
+.footer a{
+    text-decoration: none;
+    color:var(--color-green);
+}
+
+@media screen and (min-width: 48.25rem) {
+    .card {
+        padding: 2rem 2.5rem;
+        
+    }
+}
+
